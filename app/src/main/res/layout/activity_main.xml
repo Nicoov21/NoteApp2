@@ -25,7 +25,7 @@
             android:textSize="48sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/txtNota"
             android:layout_width="match_parent"
             android:layout_height="197dp"
             android:ems="10"
@@ -34,13 +34,13 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guardar nota"
             android:textSize="16sp" />
 
-        <ListView
+        <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
