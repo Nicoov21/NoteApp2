@@ -3,7 +3,6 @@ package com.example.noteapp;
 import android.icu.text.Edits;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
                         String notaactu = it.next();
                         Toast.makeText(MainActivity.this, "Nota:" + notaactu, Toast.LENGTH_SHORT).show();
                     }
+                }else{
+                    Toast.makeText(MainActivity.this, "No pueden quedar campos vacíos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
