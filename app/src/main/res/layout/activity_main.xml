@@ -19,17 +19,18 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notas"
+            android:text="Gestión de notas"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="48sp" />
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/txtNota"
             android:layout_width="match_parent"
-            android:layout_height="197dp"
+            android:layout_height="79dp"
             android:ems="10"
-            android:hint="Nueva nota"
+            android:hint="Ingrese sus notas:"
             android:inputType="textPersonName"
             android:textSize="20sp" />
 
@@ -41,8 +42,20 @@
             android:textSize="16sp" />
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/notaslistas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnernotas"
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar nota" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
