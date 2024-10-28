@@ -48,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(!nota.getText().toString().isEmpty()){
-                    alista.add(nota.getText().toString());
-                    adapter.notifyDataSetChanged();
-                    datosspinner.notifyDataSetChanged();
+                    alista.add(nota.getText().toString());//Agrega lo ingresado a la lista
+                    adapter.notifyDataSetChanged();//Actualiza el recyclerview con los nuevos datos de la lista
+                    datosspinner.notifyDataSetChanged();//Actualiza el spinner con los nuevos datos de la lista
                     nota.setText("");
                 }else{
                     Toast.makeText(MainActivity.this, "No pueden quedar campos vacíos", Toast.LENGTH_SHORT).show();
@@ -62,11 +62,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String seleccion = (String) spinner.getSelectedItem();
-                int posicion = alista.indexOf(seleccion);
+                int posicion = alista.indexOf(seleccion);//Define la posicion del dato seleccionado
                 if(posicion != -1){
-                    alista.remove(posicion);
-                    adapter.notifyDataSetChanged();
-                    datosspinner.notifyDataSetChanged();
+                    alista.remove(posicion);//Remuve los datos de la lista por su posicion
+                    adapter.notifyDataSetChanged();//Actualiza el recyclerview sin el dato que fue borrado de la lista
+                    datosspinner.notifyDataSetChanged();//Actualiza el spinner sin el dato que fue borrado de la lista
                 }else{
                     Toast.makeText(MainActivity.this, "Debes seleccionar una nota", Toast.LENGTH_SHORT).show();
                 }
