@@ -15,8 +15,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<String> alista = new ArrayList<String>();
-    RecyclerView lista;
+    ArrayList<String> alista = new ArrayList<>();
     EditText nota;
     Button boton;
     @Override
@@ -24,13 +23,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         nota = findViewById(R.id.editTextTextPersonName);
-        lista = findViewById(R.id.Notas);
         boton = findViewById(R.id.button);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alista.add(nota.getText().toString());
-                Toast.makeText(MainActivity.this, "nota " + nota, Toast.LENGTH_SHORT).show();
+                if(!nota.getText().toString().isEmpty()){
+                    alista.add(nota.getText().toString());
+                    Iterator<String> it = alista.iterator();
+                    while(it.hasNext()){
+                        String notaactu = it.next();
+                        Toast.makeText(MainActivity.this, "Nota:" + notaactu, Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
     }
