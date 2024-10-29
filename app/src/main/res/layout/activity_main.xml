@@ -7,13 +7,15 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="359dp"
-        android:layout_height="624dp"
+        android:layout_width="362dp"
+        android:layout_height="648dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192">
 
         <TextView
             android:id="@+id/textView"
@@ -41,6 +43,29 @@
             android:text="Guardar nota"
             android:textSize="16sp" />
 
+<<<<<<<<< Temporary merge branch 1
+        <Button
+            android:id="@+id/btnVerNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Notas"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/VisualizarNotasAqui"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnEliminarNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Notas"
+            android:textSize="16sp" />
+=========
         <android.support.v7.widget.RecyclerView
             android:id="@+id/notaslistas"
             android:layout_width="match_parent"
@@ -56,6 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Eliminar nota" />
+>>>>>>>>> Temporary merge branch 2
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
