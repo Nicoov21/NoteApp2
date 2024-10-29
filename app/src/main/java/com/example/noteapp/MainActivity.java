@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
                     datosspinner.notifyDataSetChanged();//Actualiza el spinner con los nuevos datos de la lista
                     nota.setText("");
                 }else{
-                    Toast.makeText(MainActivity.this, "No pueden quedar campos vacíos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "No puede quedar vacio", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        //Conny: Aqui defini el boton de eliminar con su funcion, ademas que configure la vista de la aplicacion
+        //Aqui defini el boton de eliminar con su funcion, ademas que configure la vista de la aplicacion
         btneliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,4 +74,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-//HOla Conny
