@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        //Metodos para el boton de eliminar
+        //Conny: Aqui defini el boton de eliminar con su funcion, ademas que configure la vista de la aplicacion
         btneliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
